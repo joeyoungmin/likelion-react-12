@@ -3,14 +3,14 @@ import { ChipType } from '@/types/chip';
 
 interface ChipProps {
   item: ChipType;
-  index?: number;
+  index: number;
   pressed?: boolean;
   onToggle?: (willChangePressedIndex: number) => void;
 }
 
 function Chip({ item, index, pressed = false, onToggle }: ChipProps) {
   const handleToggle = () => {
-    if (index) {
+    if (index > -1) {
       onToggle?.(index);
     }
   };
