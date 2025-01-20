@@ -15,6 +15,14 @@ function Chip({ item, index, pressed = false, onToggle }: ChipProps) {
     }
   };
 
+  const handleKey = (e: React.KeyboardEvent<HTMLSpanElement>) => {
+    switch (e.code) {
+      case 'Space':
+      case 'Enter':
+        handleToggle();
+    }
+  };
+
   return (
     <span
       role="button"
@@ -23,6 +31,7 @@ function Chip({ item, index, pressed = false, onToggle }: ChipProps) {
       aria-pressed={pressed}
       aria-disabled={pressed}
       onClick={handleToggle}
+      onKeyDown={handleKey}
     >
       {item.label}
     </span>
