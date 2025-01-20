@@ -1,5 +1,41 @@
-# 사용자 인터페이스(UI) 프로그래밍
+# Custom Vite Template
 
-- 명령형 프로그래밍 vs. 선언형 프로그래밍 (with React)
-- React 프로그래밍 (선언적 API)
-- TypeScript 활용 ( [ts-node](https://www.npmjs.com/package/ts-node) / [ts-browser](https://github.com/klesun/ts-browser?tab=readme-ov-file#readme) )
+React 학습 시작을 위한 사용자 정의 템플릿
+
+```sh
+degit yamoo9/likelion-vite-react <폴더_이름>
+cd <폴더_이름>
+pnpm install
+```
+
+## 실행 명령어
+
+개발 서버 구동
+
+```sh
+pnpm dev
+```
+
+프로젝트 빌드
+
+```sh
+pnpm build
+``` 
+
+프로젝트 프리뷰
+
+```sh
+pnpm preview
+```
+
+린팅 검사
+
+```sh
+pnpm lint
+```
+
+포멧팅
+
+```sh
+pnpm format
+```
